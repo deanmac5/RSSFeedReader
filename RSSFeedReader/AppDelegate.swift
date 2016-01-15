@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RSSFeedReader
 //
-//  Created by Dean on 15/01/2016.
-//  Copyright © 2016 Macaulay. All rights reserved.
+//  Created by Malek T. on 3/25/15.
+//  Copyright (c) 2015 Medigarage Studios LTD. All rights reserved.
 //
 
 import UIKit
@@ -17,14 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
         self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
         self.viewController = ViewController(nibName:"ViewController",bundle:nil)
         var navController = UINavigationController(rootViewController: self.viewController!)
         navController.navigationBarHidden = true
         self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
-        
         return true
     }
 
