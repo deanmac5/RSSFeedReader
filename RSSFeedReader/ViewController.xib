@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="RSSFeedReader" customModuleProvider="target">
+            <connections>
+                <outlet property="titlesTableView" destination="Y7o-xg-TXx" id="8F7-3o-8Hu"/>
+                <outlet property="view" destination="iN0-l3-epB" id="lxJ-ju-1ww"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHS-Yt-xke">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-aE-qx3">
+                            <rect key="frame" x="280" y="25" width="41" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="tEZ-aE-qx3" firstAttribute="top" secondItem="HHS-Yt-xke" secondAttribute="top" constant="25" id="B2a-QB-nn2"/>
+                        <constraint firstItem="tEZ-aE-qx3" firstAttribute="centerX" secondItem="HHS-Yt-xke" secondAttribute="centerX" id="ahE-H7-5Qo"/>
+                        <constraint firstAttribute="height" constant="50" id="mlH-K1-VTB"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y7o-xg-TXx">
+                    <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WyF-zA-iMC"/>
+                        <outlet property="delegate" destination="-1" id="pGx-fs-csb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HHS-Yt-xke" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8I1-nT-zk7"/>
+                <constraint firstItem="Y7o-xg-TXx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BWl-S7-0OP"/>
+                <constraint firstAttribute="trailing" secondItem="HHS-Yt-xke" secondAttribute="trailing" id="DQN-CM-G82"/>
+                <constraint firstAttribute="bottom" secondItem="Y7o-xg-TXx" secondAttribute="bottom" id="Xwc-ln-IfV"/>
+                <constraint firstItem="Y7o-xg-TXx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dae-4A-iJ6"/>
+                <constraint firstItem="HHS-Yt-xke" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hiP-Ro-Nyc"/>
+                <constraint firstAttribute="trailing" secondItem="Y7o-xg-TXx" secondAttribute="trailing" id="lEB-Ur-Ksz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
